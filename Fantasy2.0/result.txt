@@ -1,0 +1,25 @@
+测试用例ID: 1
+  -->激励链表: [
+	√ 激励ID : 1    激励名称 : read_radio (    激励参数 : null   激励状态 : 86 )
+	√ 激励ID : 2    激励名称 : has_new_input (    激励参数 : new_input=true   激励状态 : 6 )
+	√ 激励ID : 3    激励名称 : set_pwm (    激励参数 : roll_pwm=2200,pitch_pwm=2200,throttle_pwm=2200,yaw_pwm=2200,mode_pwm=2200   激励状态 : 5 )
+	√ 激励ID : 4    激励名称 : set_throttle_and_failsafe (    激励参数 : channel_throttle=0.00,radio_in=-1.00   激励状态 : 11 )
+	√ 激励ID : 5    激励名称 : set_throttle_zero_flag (    激励参数 : null   激励状态 : 4 )  ]
+  -->测试执行状态: [  测试耗时 :86 ]
+  -->结果状态: [ 成功 ]
+#
+测试用例ID: 2
+  -->激励链表: [
+	√ 激励ID : 1    激励名称 : read_radio (    激励参数 : null   激励状态 : 25 )
+	√ 激励ID : 2    激励名称 : has_new_input (    激励参数 : new_input=false   激励状态 : 5 )
+	x 激励ID : 3    激励名称 : set_failsafe_radio (    激励参数 : elapsed=501.00,g.failsafe_throttle=1.00,has_new_input=false,failsafe.radio=true   激励状态 : 空 )  ]
+  -->测试执行状态: [  测试耗时 :403 ]
+  -->结果状态: [ 测试用例有误，无法对应到执行程序 ]
+#
+测试用例ID: 3
+-->激励链表: [
+	√ 激励ID : 1    激励名称 : read_radio (    激励参数 : null   激励状态 : 25 )
+	√ 激励ID : 2    激励名称 : has_new_input (    激励参数 : new_input=false   激励状态 : 5 )
+	x 激励ID : 3    激励名称 : set_failsafe_radio (    激励参数 : elapsed=501.00,g.failsafe_throttle=1.00,has_new_input=false,failsafe.radio=true,flag=true   激励状态 : 空 )  ]
+-->测试执行状态: [  程序异常或出现死循环 无法测时 ]
+-->结果状态: [ 程序异常或出现死循环 ]
